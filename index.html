@@ -11,7 +11,7 @@
   <title>TI Verde</title>
 </head>
 
-<body class="w3-container ">
+<body class="">
   <!-- Header -->
   <header class="w3-display-container w3-content w3-center" style="max-width:1500px;">
     <img class="w3-image" src="cu.jpg" alt="Me" width="1500" height="600">
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  
+
 
   <div class="w3-content w3-padding-large w3-margin-top" id="info">
 
@@ -202,7 +202,7 @@
             presente nos eletroeletrônicos.
             São diversas etapas que por densidade de cada elemento facilitam o processo de reaproveitamento e destinação
             final específica para a
-            matéria-prima extraída. <br>  
+            matéria-prima extraída. <br>
 
             A tecnologia para fazer a reutilização dos metais preciosos presentes, ainda que em pequena quantidade, nos
             eletroeletrônicos ainda
@@ -217,28 +217,107 @@
             desde novos eletroeletrônicos até assoalhos e cimento.
             Desta forma, as empresas podem diminuir a extração de recursos naturais e preservar o nosso planeta ao mesmo
             tempo que garantem
-            uma fonte inesgotável de matérias-primas. <a href="https://greeneletron.org.br/blog/o-que-e-a-mineracao-urbana/">Entenda mais sobre a mineração urbana aqui.</a> </h4><br>
+            uma fonte inesgotável de matérias-primas. <a
+              href="https://greeneletron.org.br/blog/o-que-e-a-mineracao-urbana/">Entenda mais sobre a mineração urbana
+              aqui.</a> </h4><br>
         </div>
       </div><br>
 
-      <div>
-        
-      </div>
-      <!--Site em Construção-->
-
-
-      <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+      <div class="">
+        <div class="w3-container">
+          <h2>Aqui um pouco sobre o desenvolvimento do nosso site</h2>
+          <hr style="width: 90%; height: 2px;" class="w3-green "><br>
         </div>
+
+        <div class="w3-content" style="max-width:800px">
+          <img class="mySlides" src="relatorio1.jpg" style="width:100%">
+          <img class="mySlides" src="relatorio2.PNG" style="width:100%">
+          <img class="mySlides" src="relatorio3.PNG" style="width:100%">
+        </div>
+
+        <div class="w3-center">
+          <div class="w3-section">
+            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Anterior</button>
+            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Próximo ❯</button>
+          </div>
+          <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+          <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+          <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+        </div>
+        <h4 style="font-weight: bold;">Legenda: </h4><br>
+        <h4>
+          <ul>
+            <li>1.: Análise do Desenvolvimento do Site</li>
+            <li>2.: Uma parte do código onde está mostrando a codificação do SlideShow</li>
+            <li>3.: O Procedimento Experimental do nosso trabalho dentro das normas ABNT</li>
+          </ul>
+        </h4>
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" w3-green", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-green";
+          }
+        </script>
+        <!--Site em Construção-->
+      </div class="">
+      <div>
+        <div class="w3-dark-grey" style="width:100% ; height:300px;">
+          <div class="w3-container w3-padding">
+            <h4 class="w3-text-white">Navegação</h4>
+            <hr style="width: 60px; height: 3px;" class="w3-green ">
+            <h5 class="w3-text-white">
+              <a href="index.html"> > Home</a>
+            </h5>
+            <h5 class="w3-text-white">
+              <a href="#info"> > O que é</a>
+            </h5>
+            <h5 class="w3-text-white">
+              <a href="#objetivo"> > Objetivo</a>
+            </h5>
+            <h5 class="w3-text-white">
+              <a href="#mais"> > Mais</a>
+            </h5>
+          </div>
+        </div>
+        <div class="w3-green" style="width:100% ; height:40px;">
+          <h6> © Copyright 2022 | Todos os direitos reservados</h6>
+        </div>
+
+
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
       </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-
-
+    </div>
 </body>
 
 </html>
